@@ -22,6 +22,7 @@ In `src` directory create `setupJest.ts` file with following contents:
 import 'jest-preset-angular';
 import './jestGlobalMocks'; // browser mocks globally available for every test
 ```
+Copy the  jestGlobalMocks.ts file found in the example nex to your setupJest.ts. 
 
 ...and include this in your `package.json`:
 ```json
@@ -31,6 +32,8 @@ import './jestGlobalMocks'; // browser mocks globally available for every test
     "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts"
   }
 }
+
+
 ```
 
 ## Exposed [configuration](https://github.com/thymikee/jest-preset-angular/blob/master/jest-preset.json)
