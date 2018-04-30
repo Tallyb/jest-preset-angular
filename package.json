@@ -1,21 +1,24 @@
 {
   "name": "jest-preset-angular",
-  "version": "2.0.4",
+  "version": "5.2.2",
   "description": "Jest preset configuration for Angular projects",
   "main": "index.js",
   "repository": "git@github.com:thymikee/jest-preset-angular.git",
   "author": "Michał Pierzchała <thymikee@gmail.com>",
-  "license": "BSD-3",
+  "license": "MIT",
   "dependencies": {
-    "jest-zone-patch": "^0.0.7",
-    "ts-jest": "^20.0.7"  
+    "@types/jest": "^22.1.3",
+    "jest-zone-patch": "^0.0.8",
+    "ts-jest": "^22.4.1"
   },
   "devDependencies": {
-    "jest": "^20.0.4",
-    "typescript": "^2.3.0"
+    "jest": "^22.4.0",
+    "typescript": "~2.5.3"
   },
   "peerDependencies": {
-    "jest": "^20.0.0"
+    "@angular/core": ">=2.0.0",
+    "@angular/platform-browser-dynamic": ">=2.0.0",
+    "jest": "^22.0.0"
   },
   "scripts": {
     "test": "jest",
